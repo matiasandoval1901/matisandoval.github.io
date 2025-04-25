@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="#presentacion">
+                <h2 class="navegacion__titulo">Matias Sandoval</h2> 
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#presentacion"> Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#sobre-mi"> Sobre mi</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#proyectos"> Proyectos</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor_info">
+                <h1 class="presentacion__titulo"> Técnico en Software y Desarrollador Web </h1>
+                <p class="presentacion__parrafo"> Soy Matias Sandoval, tengo 28 años,
+                  y a través de este portfolio los invito a conocer aún más acerca de mí y sobre algunos
+                de mis proyectos y trabajos.</p>
+            </div>
+            <div class="presentacion__contenedor_botones">
+                <a href="#sobre-mi" class="boton" role="button"> Sobre mi</a>
+                <a href="assets/docs/CV-Sandoval-Matias.pdf" target="_blank" rel="noopener noreferrer" class="boton boton_oscuro" role="button"> Descargar CV</a>
+            </div>
+        </section>
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion">
+              <div
+                class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                aria-label="descripcion personal"
+              >
+                <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                  Mis hobbies e intereses
+                </h3>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                Disfruto mucho del diseño gráfico y la creación de contenido visual.
+                Me encargo de gestionar la cuenta de Instagram de una Asociación Civil, donde creo flyers, edito videos y organizo las publicaciones.
+                Esta actividad me permite combinar creatividad con planificación y compromiso social.
+                </p>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                También me apasiona la tecnología: me gusta experimentar con nuevos frameworks y herramientas en proyectos personales,
+                y participo activamente en cursos y charlas para seguir desarrollándome profesionalmente.
+                Para mantenerme activo, me gusta y suelo salir a correr por la plaza. Es mi momento para despejar
+                la mente y encontrar inspiración.
+                </p>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                Otra de mis grandes pasiones es la música. Estoy aprendiendo a tocar instrumentos de percusión brasileños,
+                como los que se utilizan en las escuelas de samba.
+                Gracias a esto, conecto con otras personas cada fin de semana,
+                y en varias ocasiones he tenido la oportunidad de coordinar grupos que se inician en este estilo,
+                lo cual ha fortalecido mis habilidades de liderazgo y comunicación.
+                </p>
+              </div>
+              <div class="seccion_descripcion__porta_retrato">
+                <img
+                  class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                  src="./assets/images/proyectos/recibiendo-certificado-info.jpg"
+                  alt="foto recibiendo certificado de haber finalizado curso desarrollo web"
+                  title="foto recibiendo un certificado"
+                />
+              </div>
+            </section>
+        </div>
+      </article>
+      <!-- repaso article sobre mi y su estructura -->
+
+      <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
+      no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
+      podran ir actualizando la informacion de esta seccion -->
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/sombrero-de-graduado.png"
+              alt="imagen del proyecto"
+              title="Sistema Educativo"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="sistema_educativo">Sistema Educativo</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="sistema_educativo"
+              >
+              Este es un pequeño sistema que desarrollé en el ámbito académico.
+              Utilizando lenguaje PHP para la lógica del sistema, boostrap para
+              ventanas modales y phpmyadmin para la base de datos. Este sistema contenía
+              las carreras de un Instituto, así como los datos de los alumnos y las materias
+              en la que cursaban estos alumnos.
+              </p>
+              <a href="./assets/docs/proyecto-académico-bedelia.pdf" class="boton boton_oscuro" target="_blank" rel="noopener noreferrer"
+                >Ver detalle</a
+              >
+            </div>
+          </article>
+          <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+            Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/calculador.png"
+              alt="imagen del proyecto"
+              title="Calculadora"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="calculadora">Calculadora</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="calculadora"
+              >
+              Esta es una calculadora que fue desarrollada también en el ámbito
+              académico. Utilizando el lenguaje de programación Python y su librería
+              de interfaces gráficas Tkinter.
+              </p>
+              <a href="./assets/docs/proyecto-académico-calculadora.pdf" class="boton" target="_blank" rel="noopener noreferrer">Ver detalle</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+            >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/coctel.png"
+              alt="imagen del proyecto"
+              title="Blog de Tragos"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="blog_drinks">Blog de Tragos</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="blog_drinks"
+              >
+              En este caso un blog un poco más complejo. Fue desarrollado por mí y una
+              persona más también en un ámbito académico. Utilizando el lenguaje de
+              programación Python y el framework de desarrollo web Django, logramos un
+              proyecto rubusto, escalable, con un código limpio/ordenado y utilizando
+              toda las herramientas que nos brinda Django.    
+              </p>
+              <a href="./assets/docs/proyecto-académico-mixdrinks.pdf" class="boton boton_oscuro" target="_blank" rel="noopener noreferrer"
+                >Ver detalle</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/sistema-solar.png"
+              alt="imagen del proyecto"
+              title="Reloj"
+              />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="sistema-bedelia">Blog noticias</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="reloj">
+                Proyecto académico desarrollado con Python, Django y Bootstrap. Es un blog 
+                de noticias con filtrados de posts y registro de usarios.
+              </p>
+              <a href="./assets/docs/proyecto-académico-sistema_django.pdf" class="boton" target="_blank" rel="noopener noreferrer">Ver detalle</a>
+            </div>
+          </article>
+        </div>
+      </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+        <!-- explicacion: la primer columna sera para nuestras redes,
+          cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
+        <div class="pie_de_pagina__columna">
+          <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+          <ul class="enlaces enlaces_redes">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://github.com/matiasandoval1901/"
+                target="_blank" rel="noopener noreferrer"
+                ><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/github-logo.png"
+                  alt="logo de github"
+                  title="github"
+              /></a>
+            </li>
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="#"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/ig-logo.png"
+                  alt="logo de instagram"
+                  title="instagram"
+                />
+              </a>
+            </li>
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="#"
+                target="_blank" rel="noopener noreferrer"
+                ><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/x-logo.png"
+                  alt="logo de X"
+                  title="X"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+        <div class="pie_de_pagina__columna">
+          <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+          <ul class="enlaces enlaces_vertical">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://mail.google.com/"
+                target="_blank" rel="noopener noreferrer"
+                >Mail: sandovalmati912@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+        <div class="pie_de_pagina__columna" role="navigation">
+          <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+          <ul class="enlaces enlaces_vertical">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="#presentacion"
+                >Inicio</a
+              >
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                >Sobre mi</a
+              >
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                >Proyectos</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- por ultimo los derechos de la pagina -->
+        <div class="pie_de_pagina__copyright">
+            <p>©️ Copyright 2025</p>
+            <p class="pie_de_pagina__atribucion">
+              Iconos creados por 
+              <a href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram" title="logotipo de instagram iconos">Hight Quality Icons</a>
+              <a href="https://www.flaticon.es/iconos-gratis/github" title="github iconos">Pixel perfect</a>
+              <a href="https://www.flaticon.es/iconos-gratis/logotipo-de-twitter" title="logotipo de twitter iconos">khulqi Rosyid</a>
+              <a href="https://www.flaticon.es/iconos-gratis/astrofisica" title="astrofísica iconos">VectorPortal</a>
+              <a href="https://www.flaticon.es/iconos-gratis/matematicas" title="matemáticas iconos">Freepik</a>
+              <a href="https://www.flaticon.es/iconos-gratis/coctel-de-fuego" title="coctel de fuego iconos">Manuel Viveros</a>
+              <a href="https://www.flaticon.es/iconos-gratis/serpiente" title="serpiente iconos">Freepik</a>
+            </p>
+            <p class="pie_de_pagina__atribucion">
+              de 
+              <a href="https://www.flaticon.es/" title="Flaticon" target="_blank" rel="noopener noreferrer">www.flaticon.es</a>
+            </p>
+        
+        </div>
+      </footer>
+</body>
+</html>
